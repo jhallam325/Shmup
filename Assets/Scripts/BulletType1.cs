@@ -8,6 +8,9 @@ public class BulletType1 : Bullet
     //public Vector2 direction = new Vector2(1,0);
     //public Vector2 velocity;
     public float speed = 1f;
+    
+    // Commenting to test my test branch.
+
     /*
     // Start is called before the first frame update
     void Start()
