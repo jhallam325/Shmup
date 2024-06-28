@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveSineWave : MonoBehaviour
+public class MoveSineWave : Enemy
 {
     float sinCenterY;
     public float amplitude = 2f;

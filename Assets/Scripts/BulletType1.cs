@@ -5,9 +5,13 @@ using UnityEngine;
 
 public class BulletType1 : Bullet
 {
+    //public BulletType1()
+    //{
+    //    Speed = 1;
+    //}
     //public Vector2 direction = new Vector2(1,0);
     //public Vector2 velocity;
-    public float speed = 1f;
+    //public float speed = 1f;
     
     // Commenting to test my test branch.
 

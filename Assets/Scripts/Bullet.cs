@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    //public float Speed { get; set; }
     public Vector2 direction = new Vector2(1, 0);
     public Vector2 velocity;
     //private float speed = 17f;
@@ -21,6 +22,7 @@ public class Bullet : MonoBehaviour
         // This direction used, is the directon assigned in the Gun.cs script in the
         // Shoot() method
         velocity = direction * speed;
+        //velocity = direction * Speed;
         //Debug.Log($" Update: x = {velocity.x}, y = {velocity.y}");
     }
 

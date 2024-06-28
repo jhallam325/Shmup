@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveRightToLeft : MonoBehaviour
+public class MoveRightToLeft : Enemy
 {
-    public float moveSpeed = 5f;
+    //public float moveSpeed = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -18,17 +18,17 @@ public class MoveRightToLeft : MonoBehaviour
         
     }
 
-    private void FixedUpdate()
-    {
-        Vector2 pos = transform.position;
+    //private void FixedUpdate()
+    //{
+    //    Vector2 pos = transform.position;
 
-        pos.x -= moveSpeed * Time.fixedDeltaTime;
+    //    pos.x -= moveSpeed * Time.fixedDeltaTime;
 
-        if (pos.x < -2)
-        {
-            Destroy(gameObject);
-        }
+    //    if (pos.x < -2)
+    //    {
+    //        Destroy(gameObject);
+    //    }
 
-        transform.position = pos;
-    }
+    //    transform.position = pos;
+    //}
 }
