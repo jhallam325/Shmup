@@ -10,6 +10,8 @@ public class Bullet : MonoBehaviour
     //private float speed = 17f;
     public float speed = 20f;
 
+    public bool isEnemy = false;
+
     // Start is called before the first frame update
     void Start()
     {

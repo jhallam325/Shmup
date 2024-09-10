@@ -9,7 +9,7 @@ public class MoveRightToLeft : Enemy
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("Started MoveRightToLeft Script");
     }
 
     // Update is called once per frame

@@ -13,11 +13,13 @@ public class Destructable : MonoBehaviour
     }
 
     // Update is called once per frame
+    // Here we are assuming there is nothing indestructable that will be shooting
     void Update()
     {
-        if(transform.position.x <= 15f)
+        if(transform.position.x <= 15f && !canBeDestroyed)
         {
             canBeDestroyed = true;
+            Gun guns = transform.GetComponentInChildren<Gun>();
         }
         
     }
@@ -31,9 +33,12 @@ public class Destructable : MonoBehaviour
         Bullet bullet = collision.GetComponent<Bullet>();
         if (bullet != null)
         {
-            Destroy(gameObject);
-            Destroy(bullet.gameObject);
-            // Add points here?
+            if (!bullet.isEnemy)
+            {
+                Destroy(gameObject);
+                Destroy(bullet.gameObject);
+                // Add points here?
+            }
         }
     }
 }
