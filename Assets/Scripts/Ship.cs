@@ -24,6 +24,12 @@ public class Ship : MonoBehaviour
         // and add them to the Guns Array
         guns = GetComponentsInChildren<Gun>();
         Debug.Log($" Start: Got all the guns loaded into the guns array");
+
+        foreach ( Gun gun in guns )
+        {
+            // so we can run the update method in the gun script
+            gun.isActive = true;
+        }
     }
 
     // Update is called once per frame

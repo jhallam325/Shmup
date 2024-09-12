@@ -421,11 +421,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2688066170403016063, guid: 7e00a1197d2ec464bb15377d1446cc5e, type: 3}
       propertyPath: shootDelaySeconds
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2688066170403016063, guid: 7e00a1197d2ec464bb15377d1446cc5e, type: 3}
       propertyPath: shootIntervalSeconds
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2799389020619718708, guid: 7e00a1197d2ec464bb15377d1446cc5e, type: 3}
       propertyPath: m_Size.x
@@ -743,6 +743,7 @@ MonoBehaviour:
   bullet: {fileID: 7198152144909746463, guid: 95b69050151da9740a606918a7ca3e46, type: 3}
   autoShoot: 0
   shootIntervalSeconds: 0.5
+  isActive: 0
   shootDelaySeconds: 0
 --- !u!4 &339221659 stripped
 Transform:
@@ -1360,6 +1361,7 @@ MonoBehaviour:
   bullet: {fileID: 7198152144909746463, guid: 95b69050151da9740a606918a7ca3e46, type: 3}
   autoShoot: 0
   shootIntervalSeconds: 0.5
+  isActive: 0
   shootDelaySeconds: 0
 --- !u!1001 &1180640329
 PrefabInstance:
@@ -1506,7 +1508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2688066170403016063, guid: 7e00a1197d2ec464bb15377d1446cc5e, type: 3}
       propertyPath: shootDelaySeconds
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2688066170403016063, guid: 7e00a1197d2ec464bb15377d1446cc5e, type: 3}
       propertyPath: shootIntervalSeconds
@@ -2149,6 +2151,7 @@ MonoBehaviour:
   bullet: {fileID: 7198152144909746463, guid: 95b69050151da9740a606918a7ca3e46, type: 3}
   autoShoot: 0
   shootIntervalSeconds: 0.5
+  isActive: 0
   shootDelaySeconds: 0
 --- !u!4 &1779741628 stripped
 Transform:
@@ -2201,8 +2204,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7198152144909746463, guid: 3d6f140946dcbd84ca3c2e25e870086d, type: 3}
   autoShoot: 1
-  shootIntervalSeconds: 1
-  shootDelaySeconds: 1.2
+  shootIntervalSeconds: 0.85
+  isActive: 0
+  shootDelaySeconds: 0
 --- !u!4 &1873133758 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8249195846990046989, guid: 15ca962486ec147469e7589442a23076, type: 3}

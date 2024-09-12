@@ -13,6 +13,7 @@ public class Gun : MonoBehaviour
     // guns[0].autoShoot in the Enemy.cs script?
     public bool autoShoot = false;
     public float shootIntervalSeconds = 0.5f;
+    public bool isActive = false;
 
     // The gun will wait x seconds to start autoshooting
     public float shootDelaySeconds = 0.0f;
@@ -33,6 +34,12 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isActive)
+        {
+            // if the gun isn't active, we don't need to run this update method for it.
+            return;
+        }
+
         if (autoShoot)
         {
             // First we have to wait for the delay timer before we can begin to try and auto shoot

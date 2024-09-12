@@ -5,6 +5,7 @@ using UnityEngine;
 public class Destructable : MonoBehaviour
 {
     private bool canBeDestroyed = false; // wait until x pos = 15
+    Gun[] guns;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,12 @@ public class Destructable : MonoBehaviour
         if(transform.position.x <= 15f && !canBeDestroyed)
         {
             canBeDestroyed = true;
-            Gun guns = transform.GetComponentInChildren<Gun>();
+            guns = transform.GetComponentsInChildren<Gun>();
+            // activate each gun on screen and destructable
+            foreach(Gun gun in guns)
+            {
+                gun.isActive = true;
+            }
         }
         
     }
